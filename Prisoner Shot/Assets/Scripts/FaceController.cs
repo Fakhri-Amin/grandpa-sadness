@@ -14,6 +14,7 @@ public class FaceController : MonoBehaviour
     [SerializeField] private SpriteRenderer ears;
     [SerializeField] private SpriteRenderer nose;
     [SerializeField] private SpriteRenderer mouth;
+    [SerializeField] private GameObject revealUI;
 
     private float moveSpeed;
     private Dictionary<string, Sprite> faceDict = new();
@@ -71,6 +72,7 @@ public class FaceController : MonoBehaviour
         }
         else
         {
+            SetRevealUI();
             GameManager.Instance.SetWrongChoice();
         }
     }
@@ -90,5 +92,10 @@ public class FaceController : MonoBehaviour
     public void Select()
     {
         isSelected = true;
+    }
+
+    public void SetRevealUI()
+    {
+        revealUI.SetActive(true);
     }
 }
