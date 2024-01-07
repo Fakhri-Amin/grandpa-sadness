@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b86353e402c1c43a837dd95abcde95, type: 3}
+  m_Name: FaceDatabaseSO
+  m_EditorClassIdentifier: 
+  faces:
+  - {fileID: 21300000, guid: 33a36b8beb6f9a54584f75ec9f338096, type: 3}
+  - {fileID: 21300000, guid: 65d3312ef9d5fc94ab42fd855743b0e7, type: 3}
+  - {fileID: 21300000, guid: 4f6ffab928d337c4ca37dfe962dbe752, type: 3}
+  hats:
+  - {fileID: 21300000, guid: b2cb0e43ade67874a82034892825d16b, type: 3}
+  - {fileID: 21300000, guid: 3b1d8834fe7ab4e47925f50add1209e1, type: 3}
+  - {fileID: 21300000, guid: f5ea4b40ddace8f40b0e0d0e022f5d80, type: 3}
+  - {fileID: 21300000, guid: ff66a61c39b5c544387e5d93eeee0321, type: 3}
+  - {fileID: 21300000, guid: 3d19d10c8f9dce64f851a1977785264d, type: 3}
+  eyes:
+  - {fileID: 21300000, guid: a36d4800d3113194f99d90fecfb0b19c, type: 3}
+  - {fileID: 21300000, guid: ca47a94a2a3166d4288eda8bee0b4ccd, type: 3}
+  - {fileID: 21300000, guid: f5e357cda47c2ca4084f101980b095f6, type: 3}
+  - {fileID: 21300000, guid: 83dcf1f3f82ff294f8fea2deb636807f, type: 3}
+  - {fileID: 21300000, guid: a530425c77ac8c145add46bde8f29122, type: 3}
+  ears:
+  - {fileID: 21300000, guid: 6789d1c33faf22a4390de6d0086bab9e, type: 3}
+  - {fileID: 21300000, guid: 819aae3f63ab85d499662c0d96c1d2d1, type: 3}
+  - {fileID: 21300000, guid: c79e1b6084c0dd34082e6235d05fa74c, type: 3}
+  - {fileID: 21300000, guid: 6e3d18dd218f00349b044da33289d547, type: 3}
+  - {fileID: 21300000, guid: ea4bc08ccc72e244399950b4d21e3309, type: 3}
+  noses:
+  - {fileID: 21300000, guid: 85c7c9a95b40aa64bab7eaf5c807f6ca, type: 3}
+  - {fileID: 21300000, guid: a3529fd574d249f41b33021aa521a945, type: 3}
+  - {fileID: 21300000, guid: 2dfb268536f6a5f4f8347fefb191b032, type: 3}
+  - {fileID: 21300000, guid: 640c36bae9067bd4283e08ce2b0f244c, type: 3}
+  - {fileID: 21300000, guid: 1329426dbca50794099714ee16982450, type: 3}
+  mouths:
+  - {fileID: 21300000, guid: 58a12e20b988fe04fa6f53cd4ccb190a, type: 3}
+  - {fileID: 21300000, guid: 0e4ed0daa85ea974d9e3d91fbb932c51, type: 3}
+  - {fileID: 21300000, guid: 923a10e368677cf4d8aec9f81cb7a9cf, type: 3}
+  - {fileID: 21300000, guid: c5d593705ffccf6459c23e435a6b5f4f, type: 3}
+  - {fileID: 21300000, guid: fc76863e913fecf469244aa62bf111f4, type: 3}
