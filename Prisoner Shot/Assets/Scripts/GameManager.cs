@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using MoreMountains.Feedbacks;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,6 +23,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Image barFill;
     [SerializeField] private float maxTimer;
     private float timeRemaining;
+
+    [Header("MMFeedbacks")]
+    [SerializeField] private MMFeedbacks wrongFeedbacks;
 
     private int ageNumber = 50;
     private List<GameObject> faceControllerList = new();
@@ -72,8 +77,9 @@ public class GameManager : MonoBehaviour
 
     public void SetWrongChoice()
     {
-        wrongChoiceUI.SetActive(true);
-        Time.timeScale = 0;
+        wrongFeedbacks.PlayFeedbacks();
+        // wrongChoiceUI.SetActive(true);
+        // Time.timeScale = 0;
     }
 
     public void GetToNextLevel()

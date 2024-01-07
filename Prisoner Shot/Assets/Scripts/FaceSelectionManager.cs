@@ -9,6 +9,7 @@ public class FaceSelectionManager : MonoBehaviour
     public static FaceSelectionManager Instance { get; private set; }
     [SerializeField] private SingleFaceSectionUI singleFaceSectionUI;
     [SerializeField] private Transform container;
+    [SerializeField] private Transform icon;
     [SerializeField] private Transform descText;
 
     private FaceController selectedFaceController;
@@ -51,7 +52,7 @@ public class FaceSelectionManager : MonoBehaviour
     {
         foreach (Transform item in container)
         {
-            if (item == descText) continue;
+            if (item == descText || item == icon) continue;
             Destroy(item.gameObject);
         }
 

@@ -6,7 +6,6 @@ using UnityEngine.EventSystems;
 public class FaceController : MonoBehaviour
 {
     [SerializeField] private FaceDatabaseSO faceDatabaseSO;
-    [SerializeField] private float maxMoveTimer = 2f;
 
     [SerializeField] private SpriteRenderer face;
     [SerializeField] private SpriteRenderer hat;
@@ -21,17 +20,10 @@ public class FaceController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveDirection;
     private bool isSelected;
-    private float currentTimer;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-    }
-
-    void Start()
-    {
-        // InitializeRandomFace();
-        // SetNewDestination();
     }
 
     public void InitializeRandomFace()
@@ -68,6 +60,7 @@ public class FaceController : MonoBehaviour
 
         if (isSelected)
         {
+            SetRevealUI();
             GameManager.Instance.SetCorrectChoice();
         }
         else
@@ -79,7 +72,6 @@ public class FaceController : MonoBehaviour
 
     public void SetNewDestination()
     {
-        currentTimer = maxMoveTimer;
         moveSpeed = GameManager.Instance.GetFaceMoveSpeed();
 
         float randomXNumber = Random.Range(-1, 1);
