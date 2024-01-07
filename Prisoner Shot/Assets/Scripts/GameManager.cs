@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
 
     [Header("MMFeedbacks")]
     [SerializeField] private MMFeedbacks wrongFeedbacks;
+    [SerializeField] private MMFeedbacks correctFeedbacks;
 
     private int ageNumber = 50;
     private List<GameObject> faceControllerList = new();
@@ -71,7 +72,8 @@ public class GameManager : MonoBehaviour
 
     public void SetCorrectChoice()
     {
-        correctChoiceUI.SetActive(true);
+        correctFeedbacks.PlayFeedbacks();
+        // correctChoiceUI.SetActive(true);
         Time.timeScale = 0;
     }
 
@@ -79,7 +81,7 @@ public class GameManager : MonoBehaviour
     {
         wrongFeedbacks.PlayFeedbacks();
         // wrongChoiceUI.SetActive(true);
-        // Time.timeScale = 0;
+        Time.timeScale = 0;
     }
 
     public void GetToNextLevel()

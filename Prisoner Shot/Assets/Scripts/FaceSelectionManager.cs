@@ -59,4 +59,9 @@ public class FaceSelectionManager : MonoBehaviour
 
     }
 
+    public void SetRevealUIActive()
+    {
+        selectedFaceController.SetRevealUI();
+    }
+
 }

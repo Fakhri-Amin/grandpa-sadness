@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using MoreMountains.Feedbacks;
 
 public class FaceController : MonoBehaviour
 {
@@ -60,12 +61,12 @@ public class FaceController : MonoBehaviour
 
         if (isSelected)
         {
-            SetRevealUI();
+            FaceSelectionManager.Instance.SetRevealUIActive();
             GameManager.Instance.SetCorrectChoice();
         }
         else
         {
-            SetRevealUI();
+            FaceSelectionManager.Instance.SetRevealUIActive();
             GameManager.Instance.SetWrongChoice();
         }
     }

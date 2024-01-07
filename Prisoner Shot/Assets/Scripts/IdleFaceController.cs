@@ -7,7 +7,8 @@ using UnityEngine.EventSystems;
 public class IdleFaceController : MonoBehaviour
 {
     [SerializeField] private FaceDatabaseSO faceDatabaseSO;
-    [SerializeField] private float timerToChange = 1f;
+    [SerializeField] private float minTimerToChange = 1f;
+    [SerializeField] private float maxTimerToChange = 2f;
 
     [SerializeField] private Image face;
     [SerializeField] private Image hat;
@@ -21,7 +22,7 @@ public class IdleFaceController : MonoBehaviour
     void Start()
     {
         InitializeRandomFace();
-        timeRemaining = timerToChange;
+        timeRemaining = Random.Range(minTimerToChange, maxTimerToChange);
     }
 
     private void Update()
@@ -30,7 +31,7 @@ public class IdleFaceController : MonoBehaviour
         if (timeRemaining <= 0)
         {
             InitializeRandomFace();
-            timeRemaining = timerToChange;
+            timeRemaining = Random.Range(minTimerToChange, maxTimerToChange);
         }
     }
 
