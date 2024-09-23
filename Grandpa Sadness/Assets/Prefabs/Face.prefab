@@ -54,7 +54,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   faceDatabaseSO: {fileID: 11400000, guid: c141d80d9c171bc499230a3f3ab4b658, type: 2}
-  maxMoveTimer: 2
   face: {fileID: 4813852048252223870}
   hat: {fileID: 6849872216705345542}
   eyes: {fileID: 7977361625220661269}
@@ -348,7 +347,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your son
+  m_text: Your grandson
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41cf20dd9f5ac1643a1e479ad8d3aab1, type: 2}
   m_sharedMaterial: {fileID: 2098529719966740104, guid: 41cf20dd9f5ac1643a1e479ad8d3aab1, type: 2}
